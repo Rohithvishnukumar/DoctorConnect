@@ -11,4 +11,18 @@ export class PatientsService
     {
         return await this.patientsRepo.registerPatients(patientsDto);
     }
+
+    async getPatientById(id: number)
+    {
+        return await this.patientsRepo.getPatientById(id);
+    }
+    async getPatients()
+    {
+        return await this.patientsRepo.getPatients();
+    }
+
+    async deletePatient(id: number)
+    {
+        return await this.patientsRepo.deletePatient(id);
+    }
 }
