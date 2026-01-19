@@ -2,7 +2,8 @@ import { Injectable, OnModuleDestroy } from '@nestjs/common';
 import { Pool, ResultSetHeader, createPool } from 'mysql2/promise';
 
 @Injectable()
-export class DatabaseService implements OnModuleDestroy {
+export class DatabaseService implements OnModuleDestroy 
+{
     public readonly pool: Pool;
 
     constructor() {
